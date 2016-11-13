@@ -1,8 +1,7 @@
-from fresh_tomatoes.py import *
+from fresh_tomatoes import *
 class Movie():
     """A dict would work just fine for this task, but well, to lazy to rewrite create_movie_tiles_content."""
     def __init__(self, title, image_url, yt_url):
-        super(Movies, self).__init__()
         self.title = title
         self.poster_image_url = image_url
         self.trailer_youtube_url = yt_url
