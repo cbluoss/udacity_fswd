@@ -1,0 +1,24 @@
+.logo {
+    margin-top: 20px;
+    height: 50px;
+    width: auto;
+}
+
+.head{
+    border-bottom: 4px solid #7d97ad;
+    margin-bottom: 20px;
+}
+
+h1, h4 {
+    color: #2d3c49;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #7d97ad;
+}
+
+a {
+    color: #2d3c49;
+    text-decoration: none;
+}
