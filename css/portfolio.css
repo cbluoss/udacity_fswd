@@ -9,7 +9,8 @@
     margin-bottom: 20px;
 }
 
-h1, h4 {
+h1,
+h4 {
     color: #2d3c49;
     text-transform: uppercase;
 }
