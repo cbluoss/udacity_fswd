@@ -3,5 +3,16 @@ Just run python2 my_movie_page.py
 
 No further documentation as code is trivial.
 
+
 Project2:
 open portfolio.html (img/ required)
+
+
+Project3: 
+
+cd project3/blogengine
+dev_appserver.py .
+
+or visit https://udacityblog-149513.appspot.com
+
+blog.py contains all the code
