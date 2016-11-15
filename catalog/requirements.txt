@@ -1,0 +1,7 @@
+sqlalchemy-utils 
+SQLAlchemy
+flask
+flask-login
+flask-dance
+flask-sqlalchemy
+flask-restless

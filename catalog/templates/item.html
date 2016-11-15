@@ -1,0 +1,16 @@
+{% extends "home.html" %}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+<div class="row">
+	<div class="col-lg-12">
+		<h1>{{item.name}}</h1>
+		<p>{{item.desc}}</p>
+		{% if current_user == item.owner %}
+		<a class="btn btn-default" href="/item/edit/{{item.name}}" role="button">Edit</a>
+		<a class="btn btn-warning" href="/item/delete/{{item.name}}" role="button">Delete</a>
+		{% endif %}
+</div>
+</div>
+{% endif %}
+{% endblock %}

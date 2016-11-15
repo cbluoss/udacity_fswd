@@ -1,0 +1,24 @@
+{% extends "home.html" %}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+<div class="row">
+	<div class="col-lg-12">
+		<h1>{{cat.name}}</h1>
+		<p>{{cat.info}}</p>
+		{% if current_user.is_authenticated %}
+		<a class="btn btn-default" href="/item/add/for/{{cat.name}}" role="button">Add Item</a>
+		<a class="btn btn-default" href="/category/edit/{{cat.name}}" role="button">Edit</a>
+		<a class="btn btn-warning" href="/category/delete/{{cat.name}}" role="button">Delete</a>
+		{% endif %}
+		<h2>Items</h2>
+		<ul>
+			{% for item in items %}
+				<li><a href="/items/{{item.name}}">{{item.name}}</a></li>
+			{% endfor %}
+		</ul>
+	</h1>
+</div>
+</div>
+{% endif %}
+{% endblock %}
