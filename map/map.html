@@ -94,6 +94,7 @@
       self.marker.setAnimation(google.maps.Animation.BOUNCE);
     }
     self.details = function () {
+      //get images from flickr and generate the info window.
       $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
       {
         tags: self.name,
