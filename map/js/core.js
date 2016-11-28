@@ -42,6 +42,11 @@ function initMap() {
       self.marker.setAnimation(google.maps.Animation.BOUNCE);
     };
     self.details = function () {
+      //who let the bounce out
+      self.marker.setAnimation(google.maps.Animation.BOUNCE);
+      setTimeout(function() {
+        self.marker.setAnimation(null)
+      }, 2000);
       //get images from flickr and generate the info window.
       $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
         {
